@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+	width: 100%; height: 100vh;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+nav{
+	width: 100%; height: 15vh;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+.logo{
+	width: 25%; text-align: center;
+	font-size: 30px;
+
+
+}
+.menu{
+	width: 40%; 
+	display: flex;
+	justify-content: space-around;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold; width: 25%;
+	font-size: 20px;
+}
+.menu a:first-child{
+	color:#00b894 ;
+}
+main{
+	width: 100%; height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+section{
+  padding-top: 40px;
+}
+
+section h3{
+	font-size: 40px; font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow: 1px 2px 2px black ;
+}
+section h1
+{
+	margin: 30px 0 20px 0;
+	font-size: 40px; text-shadow: 2px 1px 5px black;
+}
+section p{
+	font-size: 25px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+.btnone{
+	background: #fff;
+	color: #000; 
+	margin-right: 15px;
+	transition: all .5s ease;
+}
+.btnone:hover{
+	background: #00b894;
+	color: white;
+}
+.btntwo{
+	background: #00b894;
+	color: white;
+	transition: all .5s ease;
+}
+.btntwo:hover{
+	background: #fff;
+	color: #000; 
+
+	
+}
+.change_content::after{
+	content: "";
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+@keyframes changetext {
+	0{content: "काठमाडौं";}
+	20%{content: "पोखरा";}
+	35%{content: "भक्तपुर";}
+	60%{content: "चितवन" ;}
+	80%{content: "लुम्बिनी";}
+	100%{content: "धरान";}
+	
+}
